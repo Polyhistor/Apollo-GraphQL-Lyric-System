@@ -5,4 +5,10 @@
 
 .material-icons {
   cursor: pointer;
+  padding-right: 5px;
+}
+
+.icon-box {
+  display: flex;
+  align-items: center;
 }

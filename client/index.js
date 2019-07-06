@@ -11,7 +11,11 @@ import SongDetail from "./components/songDetail";
 import "./style/style.css";
 
 // ApolloClient assumes that /graphql route exists on your server
-const client = new ApolloClient({});
+const client = new ApolloClient({
+  // go fetch all the data you need, look at every single data, and use the ID record to identify that data.
+  //  This will help us update our components.
+  dataIdFromObject: o => o.id
+});
 
 const Root = () => {
   return (
